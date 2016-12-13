@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 1000 -V 0 -S 0 -E 20 -H a
+Relation:     Cuteness
+Instances:    116
+Attributes:   4
+              word0
+              word1
+              word2
+              class
+Test mode:10-fold cross-validation
+
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          49               42.2414 %
+Incorrectly Classified Instances        67               57.7586 %
+Kappa statistic                         -0.0078
+Mean absolute error                      0.1309
+Root mean squared error                  0.2764
+Relative absolute error                 98.4761 %
+Root relative squared error            108.8423 %
+Total Number of Instances              116     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          ?        1
+                 0         0          0         0         0          ?        2
+                 0         0          0         0         0          0.07     3
+                 0         0          0         0         0          0.34     4
+                 0.161     0.235      0.2       0.161     0.179      0.466    5
+                 0.678     0.719      0.494     0.678     0.571      0.465    6
+                 0.211     0.062      0.4       0.211     0.276      0.536    7
+                 0         0          0         0         0          0.033    8
+                 0         0          0         0         0          ?        9
+                 0         0          0         0         0          ?        10
+Weighted Avg.    0.422     0.439      0.37      0.422     0.384      0.462
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j   <-- classified as
+  0  0  0  0  0  0  0  0  0  0 |  a = 1
+  0  0  0  0  0  0  0  0  0  0 |  b = 2
+  0  0  0  0  0  1  0  0  0  0 |  c = 3
+  0  0  0  0  2  2  0  0  0  0 |  d = 4
+  0  0  0  0  5 26  0  0  0  0 |  e = 5
+  0  0  0  0 13 40  6  0  0  0 |  f = 6
+  0  0  0  0  4 11  4  0  0  0 |  g = 7
+  0  0  0  0  1  1  0  0  0  0 |  h = 8
+  0  0  0  0  0  0  0  0  0  0 |  i = 9
+  0  0  0  0  0  0  0  0  0  0 |  j = 10
+

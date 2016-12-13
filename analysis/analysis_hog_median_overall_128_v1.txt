@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 1000 -V 0 -S 0 -E 20 -H a
+Relation:     Cuteness
+Instances:    117
+Attributes:   4
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          34               29.0598 %
+Incorrectly Classified Instances        83               70.9402 %
+Kappa statistic                         -0.0476
+Mean absolute error                      0.143 
+Root mean squared error                  0.2879
+Relative absolute error                 97.4563 %
+Root relative squared error            107.2906 %
+Total Number of Instances              117     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          ?        1
+                 0         0          0         0         0          ?        2
+                 0         0          0         0         0          ?        3
+                 0         0.077      0         0         0          0.482    4
+                 0.08      0.13       0.143     0.08      0.103      0.5      5
+                 0.5       0.634      0.338     0.5       0.404      0.44     6
+                 0.29      0.209      0.333     0.29      0.31       0.609    7
+                 0         0          0         0         0          0.2      8
+                 0         0          0         0         0          ?        9
+                 0         0          0         0         0          ?        10
+Weighted Avg.    0.291     0.341      0.252     0.291     0.263      0.498
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j   <-- classified as
+  0  0  0  0  0  0  0  0  0  0 |  a = 1
+  0  0  0  0  0  0  0  0  0  0 |  b = 2
+  0  0  0  0  0  0  0  0  0  0 |  c = 3
+  0  0  0  0  2 10  1  0  0  0 |  d = 4
+  0  0  0  4  2 13  6  0  0  0 |  e = 5
+  0  0  0  3  9 23 11  0  0  0 |  f = 6
+  0  0  0  1  1 20  9  0  0  0 |  g = 7
+  0  0  0  0  0  2  0  0  0  0 |  h = 8
+  0  0  0  0  0  0  0  0  0  0 |  i = 9
+  0  0  0  0  0  0  0  0  0  0 |  j = 10
+

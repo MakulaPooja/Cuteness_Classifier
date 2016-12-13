@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 1000 -V 0 -S 0 -E 20 -H a
+Relation:     Features
+Instances:    117
+Attributes:   37
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          40               34.188  %
+Incorrectly Classified Instances        77               65.812  %
+Kappa statistic                          0.0821
+Mean absolute error                      0.1339
+Root mean squared error                  0.3211
+Relative absolute error                 91.2481 %
+Root relative squared error            119.7021 %
+Total Number of Instances              117     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          ?        1
+                 0         0          0         0         0          ?        2
+                 0         0          0         0         0          ?        3
+                 0.154     0.115      0.143     0.154     0.148      0.699    4
+                 0.32      0.207      0.296     0.32      0.308      0.608    5
+                 0.413     0.38       0.413     0.413     0.413      0.535    6
+                 0.355     0.209      0.379     0.355     0.367      0.521    7
+                 0         0.009      0         0         0          0.904    8
+                 0         0          0         0         0          ?        9
+                 0         0          0         0         0          ?        10
+Weighted Avg.    0.342     0.262      0.342     0.342     0.342      0.571
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j   <-- classified as
+  0  0  0  0  0  0  0  0  0  0 |  a = 1
+  0  0  0  0  0  0  0  0  0  0 |  b = 2
+  0  0  0  0  0  0  0  0  0  0 |  c = 3
+  0  0  0  2  4  5  1  1  0  0 |  d = 4
+  0  0  0  4  8 10  3  0  0  0 |  e = 5
+  0  0  0  6  9 19 12  0  0  0 |  f = 6
+  0  0  0  2  6 12 11  0  0  0 |  g = 7
+  0  0  0  0  0  0  2  0  0  0 |  h = 8
+  0  0  0  0  0  0  0  0  0  0 |  i = 9
+  0  0  0  0  0  0  0  0  0  0 |  j = 10
+
